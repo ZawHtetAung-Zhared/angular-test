@@ -1,0 +1,30 @@
+.landing-div {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/6476258/pexels-photo-6476258.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load');
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-div {
+  width: 800px;
+  border: 5px solid white;
+  margin-top: -240px;
+  padding: 40px;
+  color: white;
+  background: #00000030;
+}
+.text-div h1 {
+  font-size: 60px;
+}
+.custom-btn {
+  outline: none;
+  border: 2px solid white;
+  width: 200px;
+  height: 40px;
+  background: white;
+  margin-top: 20px;
+}
+
