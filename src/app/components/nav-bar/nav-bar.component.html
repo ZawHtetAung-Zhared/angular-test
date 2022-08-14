@@ -1,4 +1,4 @@
-<div class="nav-div">
+<div class="nav-div" [@slide_in_out]="slider_state">
   <ul>
     <div style="width: 100%;">
       <li (click)="goto('dashboard')">
@@ -15,6 +15,9 @@
       </li>
     </div>
     <div style="width: 100%;">
+      <li (click)="goto('home')">
+        <mat-icon>logout</mat-icon>
+      </li>
       <li style="cursor: not-allowed;">
         <mat-icon>settings</mat-icon>
       </li>

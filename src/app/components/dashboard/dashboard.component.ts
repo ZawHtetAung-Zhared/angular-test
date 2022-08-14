@@ -57,6 +57,15 @@ export class DashboardComponent implements OnInit {
   somethingChanged(e: any) {
     console.log(this.search);
 
+    this.jsonSource = example.data;
+    const res = this.jsonSource.filter(obj => (obj.attributes.content.toLowerCase().includes(this.search.toLowerCase())
+    || obj.id.includes(this.search)
+    || obj.type.toLowerCase().includes(this.search.toLowerCase())
+    || obj.links.self.toLowerCase().includes(this.search.toLowerCase())
+    || obj.relationships.authors.links.self.toLowerCase().includes(this.search.toLowerCase())));
+    this.jsonSource = res;
+    this.table.renderRows();
+    console.log(res);
   }
 
 }
