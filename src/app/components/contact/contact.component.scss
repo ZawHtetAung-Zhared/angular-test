@@ -31,6 +31,9 @@ h1 {
   border: none;
   cursor: pointer;
 }
+.btn-effect:hover {
+  background: rgb(204, 204, 204);
+}
 .contact-div button:disabled {
   cursor: not-allowed;
 }

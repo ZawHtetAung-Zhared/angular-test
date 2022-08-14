@@ -2,6 +2,10 @@
 
 ## how to run
 
-### -npm install
-### ng serve
+-npm install
 
+-ng serve
+
+### Live Demo
+
+not added yet.

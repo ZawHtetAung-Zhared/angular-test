@@ -8,7 +8,7 @@
     </div>
     <form #messageForm="ngForm">
       <textarea required name="message" [(ngModel)]="message" placeholder="Message" rows="10"></textarea>
-      <button [disabled]="!messageForm.valid" (click)="submit($event)">Submit</button>
+      <button [ngClass]="{ 'btn-effect': messageForm.valid }" [disabled]="!messageForm.valid" (click)="submit($event)">Submit</button>
     </form>
   </div>
 </div>
