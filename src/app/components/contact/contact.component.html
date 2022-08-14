@@ -1,0 +1,14 @@
+<div class="contact-div">
+  <app-nav-bar></app-nav-bar>
+  <div class="form-div">
+    <div style="margin-bottom: 40px;">
+      <h1>Contact</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, laudantium velit alias modi itaque odio rem harum est repudiandae libero aspernatur aperiam perferendis, cumque quam omnis placeat. Blanditiis, asperiores architecto.</p>
+      <p [ngClass]="{ 'sent': sentClicked }">{{dummytext}}</p>
+    </div>
+    <form #messageForm="ngForm">
+      <textarea required name="message" [(ngModel)]="message" placeholder="Message" rows="10"></textarea>
+      <button [disabled]="!messageForm.valid" (click)="submit($event)">Submit</button>
+    </form>
+  </div>
+</div>

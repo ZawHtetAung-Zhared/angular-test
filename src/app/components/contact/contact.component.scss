@@ -1,0 +1,47 @@
+.contact-div {
+  display: flex;
+  height: 100vh;
+}
+.form-div {
+  margin: 40px;
+  width: 80%;
+}
+textarea {
+  width: 40%;
+  border-radius: 6px;
+  padding: 20px;
+  transition: 0.25s;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.contact-div form {
+  display: flex;
+  flex-direction: column;
+}
+.sent {
+  color: green
+}
+.contact-div button {
+  margin-top: 40px;
+  width: 200px;
+  height: 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.contact-div button:disabled {
+  cursor: not-allowed;
+}
+textarea:focus {
+  outline: 1px solid #424242;
+}
+textarea:hover {
+  background-color: #eeeeee;
+}
+@media (max-width: 600px) {
+  textarea {
+    width: auto;
+  }
+}

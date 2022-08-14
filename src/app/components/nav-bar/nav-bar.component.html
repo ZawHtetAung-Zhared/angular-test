@@ -1,7 +1,23 @@
 <div class="nav-div">
   <ul>
-    <li>
-      <mat-icon>home</mat-icon>
-    </li>
+    <div style="width: 100%;">
+      <li (click)="goto('dashboard')">
+        <mat-icon>home</mat-icon>
+      </li>
+      <li (click)="goto('contact')">
+        <mat-icon>mail_outline</mat-icon>
+      </li>
+      <li style="cursor: not-allowed;">
+        <mat-icon>circle_notifications</mat-icon>
+      </li>
+      <li style="cursor: not-allowed;">
+        <mat-icon>no_accounts</mat-icon>
+      </li>
+    </div>
+    <div style="width: 100%;">
+      <li style="cursor: not-allowed;">
+        <mat-icon>settings</mat-icon>
+      </li>
+    </div>
   </ul>
 </div>

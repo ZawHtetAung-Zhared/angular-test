@@ -1,3 +1,74 @@
 .dashboard-div {
   display: flex;
+  height: 100vh;
+}
+table {
+  width: 100%;
+}
+.mat-column-relationships, .mat-column-attributes, .mat-column-links {
+  word-wrap: break-word !important;
+  white-space: unset !important;
+  flex: 0 0 25% !important;
+  width: 20% !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.mat-column-id, .mat-column-type {
+  width: 10%;
+}
+.table-div {
+  display: flex;
+  width: 100%;
+}
+.search-div {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: #d9d9d9;
+}
+.search-div input {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 44px;
+  outline: 1px solid transparent;
+  transition: 0.25s;
+}
+.search-div input:focus {
+  outline: 1px solid #424242;
+}
+.search-div input:hover {
+  background-color: #eeeeee;
+}
+.search-icon {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.search-div > div {
+  position: relative;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+@media (max-width: 600px) {
+  .mat-column-relationships, .mat-column-attributes, .mat-column-links {
+    width: 200px;
+  }
+  .mat-column-id, .mat-column-type {
+    width: 100px;
+  }
 }
