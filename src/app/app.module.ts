@@ -10,6 +10,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MaterialExampleModule } from 'src/material.module';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule } from '@angular/forms';
+import { StoreModule } from '@ngrx/store';
+import { booksReducer } from './book-state/book.reducers';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialExampleModule,
-    FormsModule
+    FormsModule,
+    StoreModule.forRoot({ books: booksReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]
